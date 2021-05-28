@@ -22,9 +22,9 @@ async function start () {
     await page.waitForSelector('#usr');
     await page.waitForSelector('#psw');
     await page.focus('#usr')
-    await page.keyboard.type('fischer.benni@outlook.de')
+    await page.keyboard.type('test@test.de')
     await page.focus('#psw')
-    await page.keyboard.type('halodrian1337')
+    await page.keyboard.type('*****')
     await page.click('#login')
     await page.waitForNavigation()
     await page.waitForSelector('#clearData');
