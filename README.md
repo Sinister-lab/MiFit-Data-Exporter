@@ -122,24 +122,26 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
-<div style="display: grid; grid-template-columns: 50% 50%;">
-    <div style="display: grid; justify-content: center">
-        <img style="border-radius: 100%" src="https://github.com/Sinister-lab.png?size=100">
-        <h4 style="margin-bottom: 0px; text-align: center;">Sebastian Müller</h4>
-        <div style="display: flex; justify-content: space-around; width: 100%;">
-            <a href="https://www.linkedin.com/in/sebastian-m%C3%BCller-472442105/">LinkedIn</a>
-            <a href="mailto:smueller@steinberger.co">Email</a>
-        </div>
-    </div>
-    <div style="display: grid; justify-content: center">
-        <img style="border-radius: 100%" src="https://github.com/Sinister-lab.png?size=100">
-        <h4 style="margin-bottom: 0px; text-align: center;">Ravex</h4>
-        <div style="display: flex; justify-content: space-around; width: 100%;">
-            <a href="https://www.linkedin.com/in/sebastian-m%C3%BCller-472442105/">LinkedIn</a>
-            <a href="mailto:smueller@steinberger.co">Email</a>
-        </div>
-    </div>
-</div>
+
+ <div style="text-align: center; margin-bottom: 20px">
+     <img src="https://github.com/Sinister-lab.png?size=100">
+     <h4 style="margin-bottom: 0px">Sebastian Müller</h4>
+     <div>
+         <a href="https://www.linkedin.com/in/sebastian-m%C3%BCller-472442105/">LinkedIn</a>
+         <span>|</span>
+         <a href="mailto:smueller@steinberger.co">Email</a>
+     </div>
+ </div>
+
+ <div style="text-align: center">
+     <img src="https://github.com/Sinister-lab.png?size=100">
+     <h4 style="margin-bottom: 0px">Ravex</h4>
+     <div>
+         <a href="https://www.linkedin.com/in/sebastian-m%C3%BCller-472442105/">LinkedIn</a>
+         <span>|</span>
+         <a href="mailto:smueller@steinberger.co">Email</a>
+     </div>
+ </div>
 
 
 
