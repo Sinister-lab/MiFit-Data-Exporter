@@ -10,7 +10,6 @@
     "captcha-solver": "^0.0.6",
     "captcha-solver-provider": "^0.0.6",
     "moment": "^2.29.1",
-    "node-tesseract-ocr": "^2.2.1",
     "puppeteer": "^9.1.1",
     "puppeteer-core": "^9.1.1",
     "chromium": "^3.0.2"
