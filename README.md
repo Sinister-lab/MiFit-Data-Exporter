@@ -123,19 +123,19 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
- <div style="text-align: center; margin-bottom: 20px">
+ <div align="center">
      <img src="https://github.com/Sinister-lab.png?size=100">
-     <h4 style="margin-bottom: 0px">Sebastian Müller</h4>
+     <h4>Sebastian Müller</h4>
      <div>
          <a href="https://www.linkedin.com/in/sebastian-m%C3%BCller-472442105/">LinkedIn</a>
          <span>|</span>
          <a href="mailto:smueller@steinberger.co">Email</a>
      </div>
  </div>
-
- <div style="text-align: center">
+<br/>
+ <div align="center">
      <img src="https://github.com/Sinister-lab.png?size=100">
-     <h4 style="margin-bottom: 0px">Ravex</h4>
+     <h4>Ravex</h4>
      <div>
          <a href="https://www.linkedin.com/in/sebastian-m%C3%BCller-472442105/">LinkedIn</a>
          <span>|</span>
