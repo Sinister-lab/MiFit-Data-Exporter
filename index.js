@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer');
 const moment = require('moment');
 const tesseract = require("node-tesseract-ocr")
+const config = require("./config.json");
 
 let start_date = moment().subtract(1, 'day').format('DD')
 let end_date = moment().format('DD')
@@ -22,9 +23,9 @@ async function start () {
     await page.waitForSelector('#usr');
     await page.waitForSelector('#psw');
     await page.focus('#usr')
-    await page.keyboard.type('test@test.de')
+    await page.keyboard.type(config.login_mail)
     await page.focus('#psw')
-    await page.keyboard.type('*****')
+    await page.keyboard.type(config.login_password)
     await page.click('#login')
     await page.waitForNavigation()
     await page.waitForSelector('#clearData');
@@ -49,11 +50,6 @@ async function start () {
     await page.waitForSelector('#codeImg');
     const captcha = await page.$('#codeImg');
     await captcha.screenshot({ path: './files/captcha.png' });
-    const config = {
-        lang: "eng",
-        oem: 2,
-        psm: 11,
-    }
 
     tesseract.recognize("./files/captcha.png", {}).then((text) => {
             console.log("Result:", text)
