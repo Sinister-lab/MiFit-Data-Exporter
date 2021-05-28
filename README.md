@@ -60,13 +60,12 @@
 
 My good friend Ravex felt the need to export the data from his Xiaomi fitness wristband and use it for further analysis. Unfortunately, Xiaomi does not offer the possibility to retrieve his data via a REST API or similar, which is why we developed a tool that logs into the account, requests the desired data, solves the corresponding captcha and fishes the email from the mails and unzips them.
 
-The tool can be run on any platform that supports Docker. If Docker is not available, Tesseract must be installed on the device. Genauere Infos
+The tool can be run on any platform that supports Docker.
 
 ### Built With
 
 * [NodeJS](https://nodejs.org/en/)
 * [Puppeteer](https://github.com/puppeteer/puppeteer)
-* [Tesseract](https://www.npmjs.com/package/node-tesseract-ocr)
 * [Docker](https://www.docker.com/)
 
 
