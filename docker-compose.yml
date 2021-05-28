@@ -1,0 +1,9 @@
+version: '3'
+services:
+
+  crawler:
+    build: .
+    image: sinisterjs/mi-fit-crawler:latest
+    command: "npm run -s start"
+    volumes:
+    - ./files/:/usr/src/crawler/files/
