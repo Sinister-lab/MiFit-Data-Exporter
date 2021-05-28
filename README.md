@@ -78,7 +78,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-You can configure everything important via config.js. It is important that you enter your email address and password for Xiaomi MiFit. If you don't need the email fetching then you don't have to set the email credentials.
+You can configure everything important via config.json. It is important that you enter your email address and password for Xiaomi MiFit. If you don't need the email fetching then you don't have to set the email credentials.
 
 ### Installation and Usage with Docker
 
