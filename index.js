@@ -1,6 +1,5 @@
 const puppeteer = require('puppeteer');
 const moment = require('moment');
-const tesseract = require("node-tesseract-ocr")
 const config = require("./config.json");
 
 let start_date = moment().subtract(1, 'day').format('DD')
@@ -48,16 +47,25 @@ async function start () {
     }
     await page.click('#ok')
     await page.waitForSelector('#codeImg');
-    const captcha = await page.$('#codeImg');
-    await captcha.screenshot({ path: './files/captcha.png' });
-
-    tesseract.recognize("./files/captcha.png", {}).then((text) => {
-            console.log("Result:", text)
-        }).catch((error) => {
-            console.log(error.message)
+    const captcha = await page.evaluate(async () => {
+        return await new Promise(resolve => {
+        let parent = document.getElementById('codeImg');
+        let elements = parent.getElementsByTagName('span');
+        let captchaText = ""
+        for (let element of elements) {
+            console.log(element.textContent)
+            captchaText += element.textContent;
+        }
+        resolve(captchaText)
         })
-    await page.screenshot({ path: './files/example.png' });
-    //await browser.close();
+    });
+    await page.waitForSelector('#email');
+    await page.focus('#email');
+    await page.keyboard.type(config.login_mail);
+    await page.focus('#code');
+    await page.keyboard.type(captcha);
+    await page.click('#ok');
+    await browser.close();
 };
 
 start();
